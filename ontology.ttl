@@ -1,0 +1,66 @@
+@prefix ex: <http://leagueOfLegends.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema>.
+
+ex:Game rdf:type rdfs:Class.
+ex:Game ex:hasTeams ex:Teams.
+ex:Game ex:startedAt xsd:dateTime.
+ex:Game ex:hasId xsd:nonNegativeInteger.
+
+#teams
+ex:Teams rdf:type rdfs:Container. #list quasi
+ex:Teams rdf:_1 ex:Team1.
+ex:Teams rdf:_2 ex:Team2.
+ex:Team1 rdfs:subClassOf ex:Team.
+ex:Team2 rdfs:subClassOf ex:Team.
+
+#team
+ex:Team rdf:type rdfs:Class.
+ex:Team rdfs:hasColor ex:Color.
+ex:Color rdf:type rdfs:Class.
+ex:Red rdf:subClassOf ex:Color.
+ex:Blue rdf:subClassOf ex:Color.
+ex:Team rdfs:consistsOf ex:Players.
+ex:Players rdfs:type rdfs:Container.
+ex:Players rdf:_1 ex:Player.
+ex:Players rdf:_2 ex:Player.
+ex:Players rdf:_3 ex:Player.
+
+
+#team colors
+ex:Player rdf:type rdfs:Class.
+ex:Player rdfs:hasName ex:Name.
+ex:Player ex:playsChampion ex:Champion.
+ex:Player ex:playsRole ex:Role.
+ex:Player ex:hasTeam ex:Team.
+
+#roles
+ex:Role rdf:type rdfs:Class.
+ex:Top rdf:subClassOf ex:Role.
+ex:Jungle rdf:subClassOf ex:Role.
+ex:Mid rdf:subClassOf ex:Role.
+ex:ADC rdf:subClassOf ex:Role.
+ex:Support rdf:subClassOf ex:Role.
+
+
+#champions
+ex:Champion rdf:type rdfs:Class.
+ex:Champion ex:hasName ex:Name.
+ex:Fighter rdfs:subClassOf ex:Champion.
+ex:Carry rdfs:subClassOf ex:Champion.
+ex:Mage rdfs:subClassOf ex:Champion.
+ex:Tank rdfs:subClassOf ex:Champion.
+ex:Healer rdfs:subClassOf ex:Champion.
+ex:Assasin rdfs:subClassOf ex:Champion.
+
+# spezifisches Game anschauen
+ex:LastGameBeforeSleep rdf:type ex:Game.
+ex:LastGameBeforeSleep ex:startedAt "2020-05-15T23:59:00"^^xsd:datetime.
+ex:LastGameBeforeSleep ex:hasId "3425"^^xsd:nonNegativeInteger.
+ex:LastGameBeforeSleep ex:hasTeams ex:UnbalancedTeams.
+ex:UnbalancedTeams rdf:type ex:Teams.
+ex:UnbalancedTeams rdf:_1 ex:MyTeam.
+ex:UnbalancedTeams rdf:_2 ex:EnemyTeam.
+ex:MyTeam rdf:type ex:Team.
+ex:EnemyTeam rdf:type ex:Team.
