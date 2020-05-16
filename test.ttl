@@ -1,0 +1,8 @@
+@prefix ex: <http://leagueOfLegends.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema>.
+
+ex:Paul ex:hatNote 2.0 .
+ex:Paul ex:hatNote 3.0 .
+ex:Mary ex:hatNote 2.0 .
+ex:Peter ex:hatNote 3.5 .
+

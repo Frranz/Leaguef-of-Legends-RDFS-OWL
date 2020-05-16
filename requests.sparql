@@ -1,0 +1,53 @@
+prefix ex: <http://leagueOfLegends.com/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema>
+
+#overview teams
+SELECT ?team ?player ?name ?championName ?championType
+WHERE {
+  ?team rdf:type ex:Players.
+  ?player rdfs:member ?team.
+  ?player ex:hasName ?name.
+  ?player ex:playsChampion ?champion.
+  ?champion rdf:hasName ?championName.
+  ?champion rdf:type ?championType.
+}
+
+#calculate average skill level
+
+select ?team (AVG(?skill) as ?teamSkill)
+where {
+    ?team rdf:type ex:Players.
+  	?player rdfs:member ?team.
+	?player ex:hasSkillLevel ?skill
+}
+group by ?team
+
+# which/how many champion types are in each team
+select ?team ?championType (count(?championType) as ?amount)
+where {
+  ?player rdfs:member ?team.
+  ?player ex:hasName ?name.
+  ?player ex:playsChampion ?champion.
+  ?champion rdf:type ?championType.
+}
+
+group by ?championType ?team
+
+#know which team wins each lane (considering higher skillLevel => wins lane)
+select ?team ?lane
+where {
+  	?player rdfs:member ?team.
+  	?player ex:playsRole ?lane.
+  	?player ex:hasSkillLevel ?maxSkillPerLane.
+  {
+    select ?lane (MAX(?skill) as ?maxSkillPerLane)
+    where {
+      ?player rdfs:member ?team.
+      ?player ex:playsRole ?lane.
+      ?player ex:hasSkillLevel ?skill.
+    }
+    group by ?lane
+  }
+}

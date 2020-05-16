@@ -1,3 +1,6 @@
+#use member for relationsship team to player
+
+
 @prefix ex: <http://leagueOfLegends.com/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
@@ -17,7 +20,7 @@ ex:Team2 rdfs:subClassOf ex:Team.
 
 #team
 ex:Team rdf:type rdfs:Class.
-ex:Team rdfs:hasColor ex:Color.
+ex:Team ex:hasColor ex:Color.
 ex:Color rdf:type rdfs:Class.
 ex:Red rdf:subClassOf ex:Color.
 ex:Blue rdf:subClassOf ex:Color.
@@ -30,10 +33,11 @@ ex:Players rdf:_3 ex:Player.
 
 #team colors
 ex:Player rdf:type rdfs:Class.
-ex:Player rdfs:hasName ex:Name.
+ex:Player ex:hasName ex:Name.
 ex:Player ex:playsChampion ex:Champion.
 ex:Player ex:playsRole ex:Role.
-ex:Player ex:hasTeam ex:Team.
+ex:Player ex:hasSkillLevel ex:SkillLevel.
+ex:SkillLevel rdfs:range xsd:nonNegativeInteger.
 
 #roles
 ex:Role rdf:type rdfs:Class.
@@ -63,4 +67,73 @@ ex:UnbalancedTeams rdf:type ex:Teams.
 ex:UnbalancedTeams rdf:_1 ex:MyTeam.
 ex:UnbalancedTeams rdf:_2 ex:EnemyTeam.
 ex:MyTeam rdf:type ex:Team.
+ex:MyTeam ex:consistsOf ex:ReallyGoodPlayers.
 ex:EnemyTeam rdf:type ex:Team.
+ex:EnemyTeam ex:consistsOf ex:OnlySmurfs.
+
+ex:ReallyGoodPlayers rdf:type ex:Players.
+ex:Player1 rdfs:member ex:ReallyGoodPlayers.
+ex:Player2 rdfs:member ex:ReallyGoodPlayers.
+ex:Player3 rdfs:member ex:ReallyGoodPlayers.
+ex:OnlySmurfs rdf:type ex:Players.
+ex:Player4 rdfs:member ex:OnlySmurfs.
+ex:Player5 rdfs:member ex:OnlySmurfs.
+ex:Player6 rdfs:member ex:OnlySmurfs.
+
+#myTeam
+
+ex:Player2 rdf:type ex:Player.
+ex:Player2 ex:hasName "Tachmeton"^^xsd:string.
+ex:Player2 ex:playsRole "Top".
+ex:Player2 ex:playsChampion ex:ChampionMalphite.
+ex:Player2 ex:hasSkillLevel 54.
+
+ex:Player3 rdf:type ex:Player.
+ex:Player3 ex:hasName "Frranz"^^xsd:string.
+ex:Player3 ex:playsRole "Mid".
+ex:Player3 ex:playsChampion ex:ChampionAnnie.
+ex:Player3 ex:hasSkillLevel 86.
+
+ex:Player1 rdf:type ex:Player.
+ex:Player1 ex:hasName "Astrid13"^^xsd:string.
+ex:Player1 ex:playsRole "Bottom".
+ex:Player1 ex:playsChampion ex:ChampionTeemo.
+ex:Player1 ex:hasSkillLevel 17.
+
+#enemyTeam
+ex:Player4 rdf:type ex:Player.
+ex:Player4 ex:hasName "ExProPlayer"^^xsd:string.
+ex:Player4 ex:playsRole "Top".
+ex:Player4 ex:playsChampion ex:ChampionAatrox.
+ex:Player4 ex:hasSkillLevel 99.
+
+ex:Player5 rdf:type ex:Player.
+ex:Player5 ex:hasName "FakersLittleBrother"^^xsd:string.
+ex:Player5 ex:playsRole "Mid".
+ex:Player5 ex:playsChampion ex:ChampionSion.
+ex:Player5 ex:hasSkillLevel 85.
+
+ex:Player6 rdf:type ex:Player.
+ex:Player6 ex:hasName "GuyWhosGoldInKorea"^^xsd:string.
+ex:Player6 ex:playsRole "Bottom".
+ex:Player6 ex:playsChampion ex:ChampionYasuo.
+ex:Player6 ex:hasSkillLevel 96.
+
+#champions
+ex:ChampionTeemo rdf:type ex:Fighter.
+ex:ChampionTeemo rdf:hasName "Teemo".
+
+ex:ChampionMalphite rdf:type ex:Tank.
+ex:ChampionMalphite rdf:hasName "Malphite".
+
+ex:ChampionAnnie rdf:type ex:Mage.
+ex:ChampionAnnie rdf:hasName "Annie".
+
+ex:ChampionAatrox rdf:type ex:Fighter.
+ex:ChampionAatrox rdf:hasName "Aatrox".
+
+ex:ChampionSion rdf:type ex:Tank.
+ex:ChampionSion rdf:hasName "Sion".
+
+ex:ChampionYasuo rdf:type ex:Fighter.
+ex:ChampionYasuo rdf:hasName "Yasuo".
