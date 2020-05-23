@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AD">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AD_Penetration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AD_Penetration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AP_Penetration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AP_Penetration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Krit-Chance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Krit-Chance">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Leben -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Leben">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Lebensregeneration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Lebensregeneration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Magieresistenz -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Magieresistenz">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Mana -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Mana">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Manaregeneration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Manaregeneration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Rüstung -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Rüstung">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Stat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#ARAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#ARAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Assasin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Assasin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Baron_Nashor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Baron_Nashor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Blaue_Wächter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Blaue_Wächter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Blaues_Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Blaues_Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Bot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Bot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Bot_Laner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Bot_Laner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Carry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Carry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelplfanzen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelplfanzen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fighter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fighter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Freies_Spiel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Freies_Spiel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fähigkeit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fähigkeit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gegenstände -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gegenstände"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Greifvogel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Greifvogel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gromp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gromp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Healer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Healer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Herold_der_Kluft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Herold_der_Kluft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Heulende_Schlucht -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Heulende_Schlucht">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Honigfrucht -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Honigfrucht">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelplfanzen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Inhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Inhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Jungle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Jungle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Jungler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Jungler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Kluftkrabbler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Kluftkrabbler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Knallzapfen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Knallzapfen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelplfanzen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Kooperatives_Spiel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Kooperatives_Spiel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Krugg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Krugg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Lane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Lane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Map -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Map"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mid_Laner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mid_Laner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Nexus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Nexus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Normale_Fähigkeit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Normale_Fähigkeit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fähigkeit"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Ultimative_Fähigkeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Normales_Spiel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Normales_Spiel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Ranglistenspiel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Ranglistenspiel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Rote_Dornenrücken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Rote_Dornenrücken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Rotes_Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Rotes_Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Seherblüte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Seherblüte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelplfanzen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Shop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Summoners_Rift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Summoners_Rift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Tank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Tank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Top -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Top">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Top_Laner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Top_Laner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Turm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Turm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#URF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#URF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Ultimative_Fähigkeit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Ultimative_Fähigkeit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fähigkeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Vasallen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Vasallen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Wolf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Wolf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelmonster"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Nahkampfvasall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Nahkampfvasall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+        <hat_AD rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hat_AD>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Assasin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Carry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Fighter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Healer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Tank"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Dschungelplfanzen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Game"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gegenstände"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Jungle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Lane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Mage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Map"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Role"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Shop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Team"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Einheiten"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Game"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gebäude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Gegenstände"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Map"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Shop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Spielmodus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#Team"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AD_Penetration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_AP_Penetration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Krit-Chance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Leben"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Lebensregeneration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Magieresistenz"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Mana"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Manaregeneration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-6#hat_Rüstung"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

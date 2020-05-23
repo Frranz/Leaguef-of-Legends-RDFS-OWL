@@ -1,0 +1,1275 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Entwicklung_von -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Entwicklung_von">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_in"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#hat_Item -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#hat_Item">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Schwach_gegen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Schwach_gegen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_pok -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_pok">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Item"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Größe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Größe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewinner_des_Kampfes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Heilungseffekt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Heilungseffekt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_Pokemon_Trainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_Pokemon_Trainer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#hat_Item"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_pok"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:onClass>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Arenaleiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Arenaleiter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Ash_Ketchum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Ash_Ketchum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Fortgeschrittener_Pokemon_Trainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaflor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaflor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">625</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaknosp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaknosp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisasam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisasam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">318</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Evoli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Evoli">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normales_Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">435</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Fortgeschrittener_Pokemon_Trainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Fortgeschrittener_Pokemon_Trainer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#hat_Item"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+                    </owl:Restriction>
+                </owl:onClass>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_Pokemon_Trainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gefangenes_Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gefangenes_Pokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewinner_des_Kampfes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewinner_des_Kampfes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glumanda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glumanda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">309</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glurak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glurak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">634</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glutexo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glutexo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Herausforderer_der_Liga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Herausforderer_der_Liga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Hyperball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Hyperball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">10</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Kleinstein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Kleinstein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Onix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">300</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Misty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Misty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Arenaleiter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Mensch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Mensch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Pokeball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Pokeball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Trank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Trank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trank"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Heilungseffekt"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normales_Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normales_Pokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Onix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Onix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">385</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Raichu"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">430</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_pok"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Item"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trank"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemonkampf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemonkampf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Professor_Eich -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Professor_Eich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Mensch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Raichu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Raichu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">485</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Rocko -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Rocko">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Arenaleiter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schiggy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schiggy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">314</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schillok -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schillok">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schwaches_Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schwaches_Pokemon">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">400</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Sehr_starkes_Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Sehr_starkes_Pokemon">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">590</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Starkes_Pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Starkes_Pokemon">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">401</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">589</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Superball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Superball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">10</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Supertrank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Supertrank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trank"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">10</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Heilungseffekt"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">349</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">579</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Taubsi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Taubsi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">251</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trainer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#hat_Item"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#hat_Item"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Trank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">630</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#ist_Stark_gegen"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gary_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gary_1">
+        <hat_Item rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_1"/>
+        <hat_Item rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Pokeball"/>
+        <beinhaltet rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu_1"/>
+        <Gewicht rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Gewicht>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Pokeball"/>
+        <Gewicht rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Gewicht>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu"/>
+        <Anfänger_pok rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Anfänger_pok>
+        <Stärke rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">435</Stärke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok"/>
+        <ist_in rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_2"/>
+        <Stärke rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">590</Stärke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normales_Pokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewinner_des_Kampfes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Item"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemonkampf"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schwaches_Pokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Sehr_starkes_Pokemon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Starkes_Pokemon"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gary_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu_1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gary_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu_1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Größe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Heilungseffekt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gewicht"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Größe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
