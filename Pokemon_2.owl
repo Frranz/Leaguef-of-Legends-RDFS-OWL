@@ -295,20 +295,38 @@ In den meisten Arenen muss man, bevor man den Leiter herausfordern kann, kleiner
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaflor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">625</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">625</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">625</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Bisaflor</rdfs:label>
     </owl:Class>
     
 
@@ -318,20 +336,44 @@ In den meisten Arenen muss man, bevor man den Leiter herausfordern kann, kleiner
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaknosp">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaflor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Bisaknosp</rdfs:label>
     </owl:Class>
     
 
@@ -341,20 +383,44 @@ In den meisten Arenen muss man, bevor man den Leiter herausfordern kann, kleiner
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisasam">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">318</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">318</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">318</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Bisaknosp"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Bisasam</rdfs:label>
     </owl:Class>
     
 
@@ -392,20 +458,45 @@ Zu den berühmtesten Trainern des Typs gehören die Arenaleiter Major Bob aus Ka
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Evoli">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normales_Pokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">435</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">435</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">435</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Evoli ist ein Pokémon mit dem Typ Normal und existiert seit der ersten Spielgeneration. Es ist das Pokémon mit der am größten verzweigten Evolution und kann sich in acht verschiedene Pokémon weiterentwickeln, die Evolitionen genannt werden, wobei es bei der Entwicklung immer den Typ wechselt. Seit der achten Generation ist es in der Lage, per Gigadynamaximierung zu Gigadynamax-Evoli zu werden.
+
+Als Starter-Pokémon ist es in Pokémon XD – Der Dunkle Sturm und Pokémon Conquest erhältlich. Außerdem kann man es in Pokémon Mystery Dungeon: Team Blau und Team Rot und Erkundungsteam Himmel als spielbaren Charakter oder als Partner erhalten, allerdings nur, wenn man angibt, weiblich zu sein.
+
+Zudem ist es das Starter-Pokémon in Pokémon: Let&apos;s Go, Evoli!.
+
+Im Anime nimmt es als Maikes Evoli und als Serenas Evoli eine wichtigere Rolle ein, bis es sich später zu Glaziola bzw. Feelinara entwickelt. Außerdem besaß Gary eines, welches sich zu Nachtara entwickelt hat.</rdfs:comment>
+        <rdfs:label xml:lang="de">Evoli</rdfs:label>
     </owl:Class>
     
 
@@ -599,20 +690,49 @@ Zu den berühmtesten Trainern von Gesteins-Pokémon gehören die Arenaleiter Roc
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glumanda">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">309</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">309</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">309</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glutexo"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Glumanda ist ein Pokémon mit dem Typ Feuer und existiert seit der ersten Spielgeneration. Es ist neben Bisasam und Schiggy eines der Starter-Pokémon in Pokémon Rot, Blau, Feuerrot und Blattgrün sowie eines der von Professor Platan erhältlichen Pokémon in Pokémon X und Y.
+
+In Pokémon Mystery Dungeon: Team Blau und Rot, Erkundungsteam Zeit, Dunkelheit und Himmel sowie in Pokémon Super Mystery Dungeon und Pokémon Mystery Dungeon Retterteam DX kann man es als spielbaren Charakter oder als Partner erhalten.
+
+Im Anime nimmt es als Ashs Glumanda eine wichtigere Rolle ein, welches sich später zu Glutexo entwickelt. Außerdem besitzen Trovato und Richie beide ein Glumanda, welches sich später zu Glutexo entwickelt.</rdfs:comment>
+        <rdfs:label xml:lang="de">Glumanda</rdfs:label>
     </owl:Class>
     
 
@@ -622,20 +742,45 @@ Zu den berühmtesten Trainern von Gesteins-Pokémon gehören die Arenaleiter Roc
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glurak">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">634</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">634</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">634</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Glurak ist ein Pokémon mit den Typen Feuer und Flug, das seit der ersten Spielgeneration existiert. Es stellt die zweite Entwicklungsstufe von Glumanda und Glutexo dar und ist somit neben Bisaflor und Turtok eine der Endentwicklungen der Starter-Pokémon aus Kanto. Seit der sechsten Generation ist es in der Lage, eine Mega-Entwicklung zu Mega-Glurak X oder Mega-Glurak Y zu vollführen, wobei sich bei der Mega-Entwicklung zu Mega-Glurak X sein Typ zu Feuer und Drache ändert; folglich ist es neben Mewtu das einzige Pokémon mit zwei verschiedenen Mega-Entwicklungen. Außerdem kann es seit der achten Generation per Gigadynamaximierung zu Gigadynamax-Glurak werden.
+
+Als entwickelte Form von Glumanda ist Glurak in den Hauptspielen Pokémon Rot, Blau, Feuerrot und Blattgrün als Starter-Pokémon und in Pokémon X und Y durch Professor Platan erhältlich. Mittels Entwicklung kann es außerdem in den „Pokémon Mystery Dungeon“-Spielen Team Blau und Team Rot, Erkundungsteam Zeit, Dunkelheit und Himmel sowie Super Mystery Dungeon und Pokémon Mystery Dungeon Retterteam DX die Rolle des Protagonisten oder des Partners einnehmen. Ferner ist Glurak ein wichtiger Charakter in Pokémon Mystery Dungeon: Team Blau und Team Rot und Pokémon Ranger.
+
+Glurak ist das Cover-Pokémon von Pokémon Rot und Feuerrot und des Weiteren auf den Covern von Pokémon Stadium, Pokémon Ranger und Pokémon Mystery Dungeon: Erkundungsteam Himmel zu sehen und ziert in seiner Y-Megaform das Cover von Pokémon Super Mystery Dungeon.
+
+Im Anime nimmt das Glurak im Besitz des Hauptcharakters Ash Ketchum über lange Zeit eine wichtige Rolle ein. Auch Alain, der Protagonist der Sonderfolgen zur Mega-Entwicklung, und Rot aus Pokémon Origins besitzen ein Glurak. Im „Pocket Monsters SPECIAL“-Manga hat das Glurak von Blau größere Auftritte.</rdfs:comment>
+        <rdfs:label xml:lang="de">Glurak</rdfs:label>
     </owl:Class>
     
 
@@ -645,20 +790,47 @@ Zu den berühmtesten Trainern von Gesteins-Pokémon gehören die Arenaleiter Roc
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glutexo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Feuerpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glurak"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Glutexo ist ein Pokémon mit dem Typ Feuer und existiert seit der ersten Spielgeneration. Als erste Weiterentwicklung von Glumanda spielt es eine wichtige Rolle als Starter-Pokémon in Pokémon Rot, Blau, Feuerrot, Blattgrün und X und Y.
+
+Im Anime nimmt es als Ashs Glutexo eine wichtigere Rolle ein, welches sich später zu Glurak entwickelt. Außerdem besaß Trovato eines, welches sich ebenfalls entwickelt hat. Richie besitzt ein Glutexo, mit dem Spitznamen Zippo.</rdfs:comment>
+        <rdfs:label xml:lang="de">Glutexo</rdfs:label>
     </owl:Class>
     
 
@@ -724,26 +896,47 @@ Zu den berühmtesten Trainern von Gesteins-Pokémon gehören die Arenaleiter Roc
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Kleinstein">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Onix"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">300</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">300</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">300</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Onix"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Kleinstein ist ein Pokémon mit den Typen Gestein und Boden und existiert seit der ersten Spielgeneration. Es ist die erste Entwicklungsstufe von Georok und Geowaz.Seit der siebten Spielgeneration besitzt es eine Regionalform namens Alola-Kleinstein, in der es die Typen Gestein und Elektro besitzt.
+
+Im Anime und im Manga Pocket Monsters SPECIAL nimmt es als Rockos Kleinstein eine wichtigere Rolle ein.</rdfs:comment>
+        <rdfs:label xml:lang="de">Kleinstein</rdfs:label>
     </owl:Class>
     
 
@@ -866,20 +1059,38 @@ Zu den berühmtesten Trainern des Typs gehören die Arenaleiter Bianka aus Johto
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Onix">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Gesteinpokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">385</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">385</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">385</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Onix</rdfs:label>
     </owl:Class>
     
 
@@ -917,24 +1128,41 @@ Zu den berühmtesten Trainern des Typs gehören die Arenaleiter Erika aus Kanto,
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pikachu">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Raichu"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">430</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">430</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">430</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Raichu"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -943,6 +1171,14 @@ Zu den berühmtesten Trainern des Typs gehören die Arenaleiter Erika aus Kanto,
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Pikachu ist ein Pokémon mit dem Typ Elektro und existiert seit der ersten Spielgeneration. Es ist die erste Entwicklung von Pichu und kann sich selbst zu Raichu weiterentwickeln. Ferner ist es auf dem Cover der Pokémon Special Pikachu Edition und Pokémon: Let’s Go, Pikachu! zu sehen, wo es ebenfalls das Starter-Pokémon darstellt. Seit der achten Generation ist es in der Lage, per Gigadynamaximierung zu Gigadynamax-Pikachu zu werden.
+
+Pikachu ist das Maskottchen im Anime und das Pokémon mit dem höchsten Bekanntheitsgrad[1][2][3][4][5] und das Maskottchen des Pokémon-Franchises.
+
+Im Anime ist Pikachu das Starter-Pokémon des Protagonisten Ash Ketchum, welches ihn seit Beginn seiner Reise begleitet. Außerdem besitzt Richie ein Pikachu namens Sparky. Des Weiteren wird es als Meisterdetektiv Pikachu im gleichnamigen Film eine der Hauptrollen spielen.
+
+In allen Spielen der „Pokémon Mystery Dungeon“-Reihe kann man es als spielbaren Charakter oder als Partner erhalten.</rdfs:comment>
+        <rdfs:label xml:lang="de">Pikachu</rdfs:label>
     </owl:Class>
     
 
@@ -1006,20 +1242,39 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Raichu">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Elektrisches_Pokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">485</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">485</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">485</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Raichu ist ein Pokémon mit dem Typ Elektro und existiert seit der ersten Spielgeneration. Es ist die letzte Entwicklungsstufe von Pichu und Pikachu. Seit der siebten Spielgeneration besitzt es eine Regionalform namens Alola-Raichu, in der es die Typen Elektro und Psycho annimmt.</rdfs:comment>
+        <rdfs:label xml:lang="de">Raichu</rdfs:label>
     </owl:Class>
     
 
@@ -1029,20 +1284,49 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schiggy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">314</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">314</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">314</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schillok"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Schiggy ist ein Pokémon mit dem Typ Wasser und existiert seit der ersten Spielgeneration. Es ist neben Bisasam und Glumanda eines der Starter-Pokémon in Pokémon Grün, Rot und Blau, Pokémon Feuerrot und Blattgrün sowie eines der von Professor Platan erhältlichen Pokémon in Pokémon X und Y.
+
+In allen Spielen der „Pokémon Mystery Dungeon“-Reihe vor Portale in die Unendlichkeit kann man es als spielbaren Charakter oder als Partner erhalten.
+
+Im Anime nimmt es als Ashs Schiggy eine wichtigere Rolle ein. Außerdem besaßen Maike und Tierno eines, welche sich beide zu Schillok entwickelt haben.</rdfs:comment>
+        <rdfs:label xml:lang="de">Schiggy</rdfs:label>
     </owl:Class>
     
 
@@ -1052,20 +1336,47 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schillok">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">405</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Schillok ist ein Pokémon mit dem Typ Wasser und existiert seit der ersten Spielgeneration. Als erste Weiterentwicklung von Schiggy spielt es eine wichtige Rolle als Starter-Pokémon in Pokémon Rot, Blau, Feuerrot, Blattgrün und X und Y.
+
+Im Anime nimmt es als Maikes Schillok eine wichtigere Rolle ein. Außerdem besaß Tierno eines, welches sich zu Turtok entwickelt hat.</rdfs:comment>
+        <rdfs:label xml:lang="de">Schillok</rdfs:label>
     </owl:Class>
     
 
@@ -1088,7 +1399,7 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke_von_Pokemon"/>
         <rdfs:comment xml:lang="de">Ein Schwaches Pokemon hat eine niedrige Wahrscheinlichkeit in einem Pokemonkampf zu gewinnen. Es ist nicht gut für den Kampf geeignet und entwickelt sich eventuell später zu einem stäreren Pokemon.</rdfs:comment>
         <rdfs:label xml:lang="de">Schwaches Pokemon</rdfs:label>
     </owl:Class>
@@ -1113,7 +1424,7 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke_von_Pokemon"/>
         <rdfs:comment xml:lang="de">Ein sehr starkes Pokemon hat eine hohe Wahrscheinlichkeit einen Pokemonkampf zu gewinne.</rdfs:comment>
         <rdfs:label xml:lang="de">Sehr starkes Pokemon</rdfs:label>
     </owl:Class>
@@ -1150,17 +1461,19 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke_von_Pokemon"/>
         <rdfs:comment xml:lang="de">Ein starkes Pokemon ist stark im Kampf aber es gibt noch stärkere Pokemon</rdfs:comment>
         <rdfs:label xml:lang="de">Starkes Pokemon</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke -->
+    <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke_von_Pokemon -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke">
+    <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke_von_Pokemon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokemon"/>
+        <rdfs:comment xml:lang="de">Ein Pokemon kann stärker oder schwächer sein, je nachdem wie gut es im Kampf performed. Der hier genutzte Stärkewert errechnet sich durch die Ddition aller Attribute, wie Verteidigung, Angriff usw..</rdfs:comment>
+        <rdfs:label xml:lang="de">Stärke</rdfs:label>
     </owl:Class>
     
 
@@ -1247,20 +1560,47 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboga">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">349</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">349</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">349</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboss"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Tauboga ist ein Pokémon mit den Typen Normal und Flug und existiert seit der ersten Spielgeneration. Es ist die erste Entwicklung von Taubsi und kann sich selbst zu Tauboss weiterentwickeln.
+
+Im Anime nimmt es als Ashs Tauboga eine wichtigere Rolle ein, welches sich später zu Tauboss entwickelt.</rdfs:comment>
+        <rdfs:label xml:lang="de">Tauboga</rdfs:label>
     </owl:Class>
     
 
@@ -1270,20 +1610,43 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboss">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">579</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">579</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">579</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Tauboss ist ein Pokémon mit den Typen Normal und Flug und existiert seit der ersten Spielgeneration. Es ist die letzte Entwicklungsstufe von Taubsi und Tauboga.
+
+Seit Pokémon Omega Rubin und Alpha Saphir ist es in der Lage, eine Mega-Entwicklung zu Mega-Tauboss zu vollführen.
+
+Im Anime nimmt es als Ashs Tauboss eine wichtigere Rolle ein, welches später freigelassen wird.</rdfs:comment>
+        <rdfs:label xml:lang="de">Tauboss</rdfs:label>
     </owl:Class>
     
 
@@ -1293,20 +1656,45 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Taubsi">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Flugpokemon"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">251</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">251</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">251</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#entwicklet_sich_zu"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Tauboga"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Taubsi ist ein Pokémon mit den Typen Normal und Flug und existiert seit der ersten Spielgeneration. Es ist die erste Entwicklungsstufe von Tauboga und Tauboss.</rdfs:comment>
+        <rdfs:label xml:lang="de">Taubsi</rdfs:label>
     </owl:Class>
     
 
@@ -1363,20 +1751,43 @@ Das Prinzip ist wie ein riesiges „Schere, Stein, Papier“-Spiel, nur mit viel
     <owl:Class rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Turtok">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">630</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">630</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">630</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Turtok ist ein Pokémon mit dem Typ Wasser und existiert seit der ersten Spielgeneration. Es stellt die zweite Entwicklungsstufe von Schiggy und Schillok dar und ist somit neben Glurak und Bisaflor eine der Endentwicklungen der Starter-Pokémon aus Kanto. Seit der sechsten Spielgeneration ist es in der Lage, eine Mega-Entwicklung zu Mega-Turtok zu vollführen.
+
+Ferner ist es auf dem Cover von Pokémon Blau abgebildet.
+
+Im Anime besitzen Gary und Tierno eines.</rdfs:comment>
+        <rdfs:label xml:lang="de">Turtok</rdfs:label>
     </owl:Class>
     
 
@@ -1530,6 +1941,7 @@ Im Anime und im Manga Pocket Monsters SPECIAL nimmt es als Rockos Kleinstein ein
     <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_3 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#N_Pokeball_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pokeball"/>
         <beinhaltet rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Glumanda_1"/>
         <Gewicht rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Gewicht>
     </owl:NamedIndividual>
@@ -1557,7 +1969,7 @@ In allen Spielen der „Pokémon Mystery Dungeon“-Reihe kann man es als spielb
     <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Professor_Eich -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Professor_Eich">
-        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Mensch"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normaler_Mensch"/>
         <rdfs:comment xml:lang="de">Professor Samuel Eich ist der Professor Kantos und wohnt in Alabastia.
 
 Sein Enkel Blau stellt den Rivalen der 1. und 3. Pokémon-Generation dar. Er ist einer der berühmtesten Pokémon-Forscher weltweit und genießt deshalb auch von seinen Kollegen aus den anderen Regionen großen Respekt und Ansehen. Zum Beispiel ist er der Mentor von Professor Lind aus Johto, der bei ihm studierte. Eichs eigentlicher Traum ist, den Pokédex zu vervollständigen. Auch war er in seiner Jugend ein engagierter Trainer und eiferte mit seiner Rivalin Agathe um die Vorherrschaft als Trainer. Das Endresultat dieser Rivalität war, dass dieser Champ der Pokémon-Liga von Kanto wurde. Außerdem hat er sich einen Namen als Dichter von Pokémon-Lyrik gemacht und tritt ebenfalls in diversen Radiosendungen auf.
@@ -1585,7 +1997,9 @@ Im Anime möchte sein Enkelsohn Gary in dessen Trainer-Fußstapfen treten, seine
     <!-- http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schiggy_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schiggy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Freies_Pokemon"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schiggy"/>
+        <Stärke rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">314</Stärke>
         <rdfs:comment xml:lang="de">Schiggy ist ein Pokémon mit dem Typ Wasser und existiert seit der ersten Spielgeneration. Es ist neben Bisasam und Glumanda eines der Starter-Pokémon in Pokémon Grün, Rot und Blau, Pokémon Feuerrot und Blattgrün sowie eines der von Professor Platan erhältlichen Pokémon in Pokémon X und Y.
 
 In allen Spielen der „Pokémon Mystery Dungeon“-Reihe vor Portale in die Unendlichkeit kann man es als spielbaren Charakter oder als Partner erhalten.
@@ -1633,21 +2047,6 @@ Im Anime besitzen Gary und Tierno eines.</rdfs:comment>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Stärke">
-        <rdfs:label xml:lang="de">Stärke</rdfs:label>
-        <rdfs:comment xml:lang="de">Ein Pokemon kann stärker oder schwächer sein, je nachdem wie gut es im Kampf performed. Der hier genutzte Stärkewert errechnet sich durch die Ddition aller Attribute, wie Verteidigung, Angriff usw..</rdfs:comment>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1671,14 +2070,6 @@ Im Anime besitzen Gary und Tierno eines.</rdfs:comment>
             <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Normales_Pokemon"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Pflanzenpokemon"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Wasserpokemon"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Schwaches_Pokemon"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Sehr_starkes_Pokemon"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Starkes_Pokemon"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
