@@ -7,6 +7,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema>.
 
 ex:Game rdf:type rdfs:Class.
+ex:Game rdfs:label "Spiel"@de.
+ex:Game rdfs:label "Game"@en.
+ex:Game rdfs:comment "In einem Spiel (League of Legends) treffen mehrere Spieler aufeinander, diese sind in Teams unterteilt. Diese Teams spielen gegeneinander und das Gewinnerteam ist das, welches den gegnerischen Nexus als erstes zerstört."@de.
 ex:Game ex:hasTeams ex:Teams.
 ex:Game ex:startedAt xsd:dateTime.
 ex:Game ex:hasId xsd:nonNegativeInteger.
@@ -20,6 +23,9 @@ ex:Team2 rdfs:subClassOf ex:Team.
 
 #team
 ex:Team rdf:type rdfs:Class.
+ex:Team rdfs:label "Team"@de.
+ex:Team rdfs:label "Team"@en.
+ex:Team rdfs:comment "Ein Team besteht aus mehreren Spielern. Teams die sich im gleichen Spiel befinden, treten gegeneinander an."@de.
 ex:Team ex:hasColor ex:Color.
 ex:Color rdf:type rdfs:Class.
 ex:Red rdf:subClassOf ex:Color.
@@ -33,6 +39,9 @@ ex:Players rdf:_3 ex:Player.
 
 #team colors
 ex:Player rdf:type rdfs:Class.
+ex:Player rdfs:label "Spieler"@de.
+ex:Player rdfs:label "Player"@en.
+ex:Player rdfs:comment "Ein Spieler besitzt einen Namen. Im Spiel nimmt er eine bestimmte Rolle ein und spielt einen Champion. Je nach den Fähigkeiten des Spielers hat er auch ein bestimmtes skillLevel."@de.
 ex:Player ex:hasName ex:Name.
 ex:Player ex:playsChampion ex:Champion.
 ex:Player ex:playsRole ex:Role.
@@ -41,6 +50,9 @@ ex:SkillLevel rdfs:range xsd:nonNegativeInteger.
 
 #roles
 ex:Role rdf:type rdfs:Class.
+ex:Role rdfs:label "Rolle"@de.
+ex:Role rdfs:label "Role"@en.
+ex:Role rdfs:comment "Jeder Spieler nimmt eine bestimmte Rolle im Team ein. Diese hat bestimmte Aufgaben innerhalb des Teams. So sind zum Beispiel ADC's verantwortlich dafür, mögichst viel 'normalen Schaden' am Gegnerteam anzurichten."@de.
 ex:Top rdf:subClassOf ex:Role.
 ex:Jungle rdf:subClassOf ex:Role.
 ex:Mid rdf:subClassOf ex:Role.
@@ -50,6 +62,9 @@ ex:Support rdf:subClassOf ex:Role.
 
 #champions
 ex:Champion rdf:type rdfs:Class.
+ex:Role rdfs:label "Champion"@de.
+ex:Role rdfs:label "Champion"@en.
+ex:Role rdfs:comment "Ein Champion ist ein Character im Spiel. Es gibt mehrere Champions mit unterschiedlichen Fähigkeiten und Werten."@de.
 ex:Champion ex:hasName ex:Name.
 ex:Fighter rdfs:subClassOf ex:Champion.
 ex:Carry rdfs:subClassOf ex:Champion.
@@ -58,7 +73,7 @@ ex:Tank rdfs:subClassOf ex:Champion.
 ex:Healer rdfs:subClassOf ex:Champion.
 ex:Assasin rdfs:subClassOf ex:Champion.
 
-# spezifisches Game anschauen
+# create real instance
 ex:LastGameBeforeSleep rdf:type ex:Game.
 ex:LastGameBeforeSleep ex:startedAt "2020-05-15T23:59:00"^^xsd:datetime.
 ex:LastGameBeforeSleep ex:hasId "3425"^^xsd:nonNegativeInteger.
