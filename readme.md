@@ -30,7 +30,8 @@ Diese Übersicht könnte zum Beispiel sinnvoll sein, um sich einen Überblick ü
 <br>
 
 Result:
-![query Result](QueryResults\AverageSkillByTeam.PNG)
+
+![query Result](rdfs\QueryResults\ChampionOverview.PNG)
 
 #### Durchschnittliches Fäighektislevel (skillLevel) pro Team
 Dieser Query zeigt das durchschnittliche Fähigkeitslevel pro Team.
@@ -44,9 +45,11 @@ Es könnte zum Beispiel genutzt werden, um auf eine sehr vereinfachte Weise zu s
         ?player ex:hasSkillLevel ?skill
     }
     group by ?team
+
+
 Result:
 
-![query Result](QueryResults\AverageSkillByTeam.PNG)
+![query Result](rdfs\QueryResults\AverageSkillByTeam.PNG)
 
 
 #### Häufigkeit nach Champion Typ
@@ -63,6 +66,11 @@ Damit könnte zum Beispiel vorausgesagt werden, welchen Spielstil ein Spiel habe
         ?champion rdf:type ?championType.
     }
     group by ?championType
+
+
+Result:
+
+![query Result](rdfs\QueryResults\ChampionTypeCount.PNG)
 
 #### Welches Team hat den besseren Spieler auf welcher Lane?
 
@@ -83,3 +91,8 @@ In diesem Query werden die Skill Level der einzelnen Spieler nach Lane und Teamz
         group by ?lane
     }
     }
+
+
+Result:
+
+![query Result](rdfs\QueryResults\HigherSkillByLane.PNG)
