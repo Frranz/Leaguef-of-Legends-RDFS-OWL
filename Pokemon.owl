@@ -255,12 +255,12 @@ Orden können in Arena erhalten werden, sobald der Trainer den Arenaleiter besie
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#beinhaltet"/>
-                        <owl:allValuesFrom>
+                        <owl:someValuesFrom>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/meton/ontologies/2020/4/untitled-ontology-9#Anfänger_pok"/>
                                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                             </owl:Restriction>
-                        </owl:allValuesFrom>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
